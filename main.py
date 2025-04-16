@@ -10,4 +10,3 @@ controller = PowerController(i2c, address=0x38, output_names=[
 controller["night_lights"].turn_on()
 
 input("Press Enter to exit...\n")
-
