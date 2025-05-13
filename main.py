@@ -1,5 +1,5 @@
-from trainhub import get_i2c, shutdown_i2c
-from trainhub.power_controller import PowerController
+from railcall import get_i2c, shutdown_i2c
+from railcall.power_controller import PowerController
 
 i2c = get_i2c()
 

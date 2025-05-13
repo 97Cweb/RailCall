@@ -1,5 +1,5 @@
 [project]
-name = "trainhub"
+name = "railcall"
 version = "0.1.0"
 description = "Central Python controller for managing Beeton Decoder-based train networks"
 authors = [
