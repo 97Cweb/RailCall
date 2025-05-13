@@ -1,14 +1,24 @@
 [project]
 name = "railcall"
 version = "0.1.0"
-description = "Central Python controller for managing Beeton Decoder-based train networks"
-authors = [
-    { name="Collin Barker", email="you@example.com" }
-]
+description = "Rail network controller for Beeton Decoders"
 readme = "README.md"
+requires-python = ">=3.7"
 license = {text = "MIT"}
-dependencies = []
+authors = [{ name="Collin Barker", email="97cweb@gmail.com" }]
+
+dependencies = [
+    "adafruit-blinka",
+    "RPi.GPIO",
+    "adafruit-circuitpython-pca9554",
+]
+
+[project.urls]
+Homepage = "https://github.com/97cweb/RailCall"
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["railcall"]  # or use find: {include = ["railcall*"]}
