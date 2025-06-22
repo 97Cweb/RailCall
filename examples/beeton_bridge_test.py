@@ -26,7 +26,6 @@ def extract_tags(line):
         module = "UNKNOWN"
     level_code = level_match.group(1) if level_match else "I"
     level_map = {
-        "V": "VERBOSE",
         "D": "DEBUG",
         "I": "INFO",
         "W": "WARN",
